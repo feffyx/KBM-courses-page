@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+
+}
+
+
+
+/* Navbar CSS */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+
+.white-bg {
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Carousel CSS */
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+.carousel-caption .btn {
+    margin-bottom: 10px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .carousel-inner img {
+        height: 350px; 
+    }
+
+    .carousel-caption p, h1 {
+        margin-bottom: -5px;
+    }
+
+    .carousel-caption .btn {
+        font-size: 10px;
+        padding: 8 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.carousel-caption .btn {
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    font-weight: 200;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.carousel-caption .btn:hover {
+    background-color: #1c143c;
+    color: #fff;
+    border-color: #1c143c;
+}
+
+.carousel-caption .btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+
+/* About CSS */
+.about i {
+    font-size: 48px; 
+    color: #1c143c; 
+    margin-bottom: 16px; 
+}
+
+
+
+/* Services CSS */
+/* Card Hover Effect */
+.card {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: white; 
+    border: none; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.card:hover {
+    background-color: #1c143c; 
+    color: white; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.card .service-icon-card i,
+.card-title,
+.card-text {
+    transition: color 0.3s ease;
+}
+
+.card:hover .service-icon-card i,
+.card:hover .card-title,
+.card:hover .card-text {
+    color: white; 
+}
+
+
+.card-body {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.card:hover .card-body {
+    border-color: transparent; 
+}
+ 
+.service-icon {
+    font-size: 50px;
+    color: #1c143c;
+}
+
+.service-content h4 {
+    color: #1c143c;
+    text-decoration: none;
+}
+
+.service-content p {
+    color: #666;
+}
+
+.text-block {
+    margin-bottom: 30px;
+}
+
+.fixed-size-card {
+    width: 100%; 
+    max-width: 300px; 
+    height: 300px;
+    margin: 0 auto; 
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+}
+
+@media (max-width: 768px) {
+    .fixed-size-card {
+        max-width: 100%; 
+        height: auto; 
+    }
+}
+
+
+
+/* Custom Carousel CSS */
+.custom-carousel-inner {
+    min-height: 400px;
+}
+
+.custom-carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+
+
+.custom-carousel-title {
+    padding: 0 50px;
+}
+
+.custom-carousel-title h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.custom-carousel-caption {
+    padding: 0 50px;
+}
+
+.custom-carousel-caption p {
+    font-size: 1.1rem;
+}
+
+#customCarousel .btn {
+    background-color: #1c143c;
+    border-radius: 22px;
+    color: #fff;
+}
+
+#customCarousel img {
+    filter: brightness(100%);
+}
+
+.custom-carousel-control-next {
+    width: 5%;
+    margin-left: -20px;
+    margin-right: -20px;
+    color: #1c143c;
+}
+
+.fa-circle-right {
+    font-size: 40px;
+   padding-right: 20px;
+}
+
+.carousel-control-next-icon {
+    filter: opacity(100%);
+}
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+    .card-1 {
+        margin-bottom: 30px;
+    }
+
+    .custom-carousel-item {
+        flex-direction: column;
+    }
+
+    .custom-carousel-title, .custom-carousel-caption {
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .custom-carousel-title h1 {
+        font-size: 2rem;
+    }
+
+    .custom-carousel-caption p {
+        font-size: 1rem;
+    }
+
+
+    .custom-carousel-control-prev, .custom-carousel-control-next {
+        width: 10%;
+        margin-left: -10px;
+        margin-right: -10px;
+        
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        height: 40px; 
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+    }
+
+    .carousel-caption {
+        padding-top: 100px;
+    }
+
+    .about i {
+        font-size: 36px;
+    }
+
+    .service-icon {
+        font-size: 40px;
+    }
+
+    .fixed-size-card {
+        max-width: 100%;
+        height: auto; 
+    }
+
+
+}
